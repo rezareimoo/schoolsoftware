@@ -1,11 +1,10 @@
+from Address import Address
 class Person:
-	def __init__(self, first_name, last_name, age, address, gender, phone):
+	def __init__(self, first_name, last_name, date_of_birth, gender, phone):
 		self.first_name = first_name
 		self.last_name = last_name
-		self.age = age
-		self.address = address
+		self.date_of_birth = date_of_birth
 		self.gender = gender
-		self.phone = phone
 		self.phone = phone
 
 	def get_first_name(self):
@@ -17,5 +16,8 @@ class Person:
 	def get_age(self):
 		return self.age
 
-	def get_address(self):
-		self.address
+	def get_gender(self):
+		return self.gender
+
+	def get_phone(self):
+		return self.phone
